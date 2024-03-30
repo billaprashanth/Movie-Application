@@ -1,56 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Application</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <section>
-        <div class="search-container">
-            <input type="text" id="movieName" onchange="fetchMovieDetails()"
-                placeholder="Enter a Movie Name for Details">
-            <button class="btn" onclick="fetchMovieDetails()">Search Movie</button>
-        </div>
+      <div class="search-container">
+        <input
+          type="text"
+          id="movieName"
+          onchange="fetchMovieDetails()"
+          placeholder="Enter a Movie Name for Details"
+        />
+        <button class="btn" onclick="fetchMovieDetails()">Search</button>
+      </div>
     </section>
     <section>
-        <div class="intro" id="intro">
-            <img src="" alt="">
-            <h1 class="highlighter">Want to know the complete Details of a Movie?</h1>
-            <p>Search the Movie name and get the details of a Director,Actors,IMDB And So,on...</p>
-        </div>
+      <div class="intro" id="intro">
+        <img src="" alt="" />
+        <h1 class="highlighter">
+          Want to know the complete Details of a Movie?
+        </h1>
+        <p>
+          Search the Movie name and get the details of a Director,Actors,IMDB
+          And So,on...
+        </p>
+      </div>
     </section>
     <section>
-        <div id="loader"></div>
-        <div class="movie-container" id="movieContainer">
-            <div class="content">
-                <h1 id="Title">Kantara</h1>
-                <p class="movie-ideas" >Year : <span id="Year"></span></p>
-                <p class="movie-ideas" >Plot : <span id="Plot"></span></p>
-                <p class="movie-ideas">Actors : <span id="Actors"></span></p>
-                <p class="movie-ideas">Awards : <span id="Awards"></span></p>
-                <p class="movie-ideas">Director : <span id="Director"></span></p>
-                <p class="movie-ideas">Released : <span id="Released"></span></p>
-                <p class="movie-ideas">Collection : <span id="BoxOffice"></span></p>
-            </div>
-            
-            <div class="movie-img-container">
-                <img class="movie-image" id="img"
-                    src="https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg"
-                    alt="">
-                <p class="same-class ratings">IMDB: <span id="imdbRating"></span> </p>
-                <p class="same-class genre"><span id="Genre"></span></p>
-            </div>
+      <div id="loader"></div>
+      <div class="movie-container" id="movieContainer">
+        <div class="content">
+          <h1 id="Title">Kantara</h1>
+          <p class="movie-ideas">Year : <span id="Year"></span></p>
+          <p class="movie-ideas">Plot : <span id="Plot"></span></p>
+          <p class="movie-ideas">Actors : <span id="Actors"></span></p>
+          <p class="movie-ideas">Awards : <span id="Awards"></span></p>
+          <p class="movie-ideas">Director : <span id="Director"></span></p>
+          <p class="movie-ideas">Released : <span id="Released"></span></p>
+          <p class="movie-ideas">Collection : <span id="BoxOffice"></span></p>
         </div>
-        <div class="error-container" id="errorContainer">
-            <h1 class="highlighter"  >Movie Not found!</h1>
+
+        <div class="movie-img-container">
+          <img
+            class="movie-image"
+            id="img"
+            src="https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg"
+            alt=""
+          />
+          <p class="same-class ratings">IMDB: <span id="imdbRating"></span></p>
+          <p class="same-class genre"><span id="Genre"></span></p>
         </div>
+      </div>
+      <div class="error-container" id="errorContainer">
+        <h1 class="highlighter">Movie Not found!</h1>
+      </div>
     </section>
-    
+
     <script src="./app.js"></script>
-</body>
-
+  </body>
 </html>

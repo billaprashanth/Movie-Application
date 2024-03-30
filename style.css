@@ -18,7 +18,8 @@ input {
   padding: 18px;
   border: 1px solid transparent;
   background-color: rgb(95, 93, 93);
-  width: 600px;
+  width: 100%;
+  max-width: 470px;
   color: white;
   border-radius:12px 0px 0px  12px;
 }
@@ -60,6 +61,7 @@ input:focus {
 .highlighter {
   background: radial-gradient(circle at center center, #2DE263 0%, #4A00E0 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -139,4 +141,48 @@ input:focus {
   border-radius: 5px;
   margin: 20px;
   display: inline-block;
+}
+
+
+@media screen and (max-width:720px) {
+  input {
+    width: 400px;
+    padding: 12px;
+  }
+  .intro .highlighter {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width:620px) {
+  input {
+    width: 300px;
+  }
+  .intro .highlighter {
+    font-size: 22px;
+  }
+  .intro p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width:520px) {
+  input {
+    width: 250px;
+
+  }
+  
+}
+
+@media screen and (max-width:480px) {
+  input::placeholder {
+    font-size: 13px;
+  }
+  .btn {
+    font-size: 13px;
+  }
+  .intro .highlighter {
+    font-size: 18px;
+  }
+  .intro p {
+    font-size: 14px;
+  }
 }
