@@ -56,13 +56,13 @@ input:focus {
 }
 
 .intro h1 {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 0;
 }
 
 .intro p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .highlighter {
@@ -196,6 +196,21 @@ input:focus {
   .genre {
     font-size: 14px;
   }
+  .error-container {
+    text-align: center;
+    font-size: 27px;
+  }
+  .intro {
+    width: 100%;
+    max-width: 450px;
+  }
+  .intro .highlighter {
+    font-size: 30px;
+
+  }
+  .intro  p {
+    font-size: 19px;
+  }
 }
 @media screen and (max-width:480px) {
   input {
@@ -213,5 +228,18 @@ input:focus {
   .genre {
     font-size: 12px;
   }
-}
+  .error-container {
+    text-align: center;
+    font-size: 16px;
+  }
+  .intro {
+    max-width: 350px;
+  }
+  .intro .highlighter {
+    font-size: 24px;
 
+  }
+  .intro  p {
+    font-size: 16px;
+  } 
+}
